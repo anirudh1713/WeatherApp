@@ -1,6 +1,3 @@
-const pixaBayKey = "17172717-b019c6a33c2b5e7370880efaa";
-const openWeatherKey = "97fc3552d0eaead441789ea0bd867726";
-
 //responsive navbar
 const navBtn = document.querySelector(".navbar-burger");
 const navMenu = document.querySelector(".navbar-menu");
@@ -87,3 +84,5 @@ submitBtn.addEventListener("click",  async () => {
   `;
   }
 });
+const pixaBayKey = "17172717-b019c6a33c2b5e7370880efaa";
+const openWeatherKey = "97fc3552d0eaead441789ea0bd867726";
