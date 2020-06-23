@@ -13,7 +13,7 @@ navBtn.addEventListener("click", () => {
 
 //fetch city data from openweather
 const data = async (city) => {
-  const dataFetch =  await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${openWeatherKey}`);
+  const dataFetch =  await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${openWeatherKey}`);
   return await dataFetch.json();
 };
 
