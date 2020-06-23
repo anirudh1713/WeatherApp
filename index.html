@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WeatherApp</title>
+    <link rel="stylesheet" href="./bulma-0.9.0/css/bulma.css">
+</head>
+<body>
+<section class="hero is-dark">
+    <div class="hero-head">
+<!--        nav bar start-->
+        <nav class="navbar is-spaced">
+            <div class="navbar-brand">
+                <a href="index.html" class="navbar-item"><h1 class="title">WeatherApp</h1></a>
+
+                <a role="button" class="navbar-burger burger">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+<!--            navbar menu-->
+            <div class="navbar-menu">
+                <div class="navbar-start">
+                    <a href="#" class="navbar-item">Random</a>
+                    <a href="#" class="navbar-item">Item</a>
+                    <a href="#" class="navbar-item">Here</a>
+                </div>
+
+                <div class="navbar-end">
+                    <div class="navbar-item">
+<!--                        github button-->
+                        <div class="buttons">
+                            <a role="button" href="https://github.com/anirudh1713" class="button is-white">My GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+<!--        navbar end-->
+    </div>
+<!--    hero head end-->
+
+<!--    hero body start-->
+    <div class="hero-body">
+        <dvi class="columns">
+            <div class="column"></div>
+            <div class="column is-half cardSpace">
+<!--                main contents-->
+                <div class="field has-addons">
+                    <div class="control is-expanded">
+<!--                        input field for city-->
+                        <input type="text" class="input is-rounded is-white cityName" placeholder="Enter City">
+                    </div>
+                    <div class="control">
+<!--                        submit button-->
+                        <button class="button is-warning is-rounded submitBtn">Submit</button>
+                    </div>
+                </div>
+
+<!--                card with output here-->
+                <div class="card">
+
+
+
+                </div>
+<!--                card end-->
+
+            </div>
+            <div class="column"></div>
+        </dvi>
+    </div>
+
+    <div class="hero-foot">
+        <div class="content has-text-centered">
+            <p>
+                Made by <a href="https://github.com/anirudh1713"><strong>Anirudh Atodaria</strong></a>, by using <a
+                    href="https://bulma.io/"><strong>Bulma CSS</strong></a>, <a href="https://openweathermap.org/"><strong>openweathermap API</strong></a> and <a href="https://pixabay.com/"><strong>pixabay API</strong></a>
+            </p>
+        </div>
+    </div>
+</section>
+
+<script src="app.js"></script>
+</body>
+</html>
