@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="./bulma-0.9.0/css/bulma.css">
 </head>
 <body>
-<section class="hero is-dark">
+<section class="hero is-primary is-success">
     <div class="hero-head">
 <!--        nav bar start-->
         <nav class="navbar is-spaced">
@@ -47,6 +47,11 @@
             <div class="column"></div>
             <div class="column is-half cardSpace">
 <!--                main contents-->
+                <article class="message is-danger cityErr is-hidden">
+                    <div class="message-body">
+                        City name is incorrect or data not found for this city.
+                    </div>
+                </article>
                 <div class="field has-addons">
                     <div class="control is-expanded">
 <!--                        input field for city-->
@@ -57,12 +62,22 @@
                         <button class="button is-warning is-rounded submitBtn">Submit</button>
                     </div>
                 </div>
+                <article class="message is-warning">
+                    <div class="message-body">
+                        The image here is not accurate because for some places accurate images are not found on pixabay.
+                    </div>
+                </article>
 
 <!--                card with output here-->
                 <div class="card">
-
-
-
+                    <article class="message is-warning">
+                        <div class="message-header">
+                            Enter City name
+                        </div>
+                        <div class="message-body">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, vero?Lorem ipsum dolor sit amet. Lorem ipsum dolor sit. Lorem ipsum dolor sit amet.Accusamus aspernatur assumenda atque aut autem cum cumque eius enim expedita illo impedit incidunt ipsum libero magni maxime, modi molestias nesciunt nihil nisi nobis quae quaerat quod recusandae sint sunt ullam veritatis, voluptate?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid consequatur culpa cumque eligendi ex fugit non obcaecati omnis quidem voluptates?Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolore nemo odit quae quidem rem voluptatibus? Aut commodi, consectetur, cumque esse fugiat illo, impedit laboriosam ratione sequi vitae voluptates voluptatum. Maiores modi nam rem tempore! Aliquam aut autem distinctio dolore harum hic inventore, iusto perferendis porro quaerat suscipit vero voluptate.</p>
+                        </div>
+                    </article>
                 </div>
 <!--                card end-->
 

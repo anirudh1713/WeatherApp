@@ -23,6 +23,15 @@ const imageData = async (city) => {
     return await dataFetch.json();
 };
 
+//error message function
+const errMsg = () => {
+  const errMsg = document.querySelector(".cityErr");
+  errMsg.classList.remove("is-hidden");
+  setTimeout(() => {
+    errMsg.classList.add("is-hidden");
+  }, 2500);
+};
+
 //select buttons
 const cityEntered = document.querySelector(".cityName");
 const submitBtn = document.querySelector(".submitBtn");
@@ -33,7 +42,12 @@ submitBtn.addEventListener("click",  async () => {
   const city = cityEntered.value;
   const weatherData = await data(city);
   const imgData = await imageData(city);
-  cardHolder.innerHTML =`
+  if (weatherData.cod === "404"){
+    errMsg();
+  }else if (!city){
+    errMsg();
+  } else{
+    cardHolder.innerHTML =`
                     <header class="card-header">
                         <p class="card-header-title">
                             ${weatherData.name}
@@ -71,4 +85,5 @@ submitBtn.addEventListener("click",  async () => {
                         </div>
                     </div>
   `;
+  }
 });
